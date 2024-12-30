@@ -58,7 +58,7 @@ export function NavMenu() {
     <NavigationMenu className="font-extralight">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger><p className="font-bold text-[120%]">Getting Started</p></NavigationMenuTrigger>
+          <NavigationMenuTrigger><p className="font-bold text-[120%] ">Getting Started</p></NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -91,8 +91,8 @@ export function NavMenu() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger><p className="font-bold text-[120%]">About</p></NavigationMenuTrigger>
+        <NavigationMenuItem >
+          <NavigationMenuTrigger ><p className="font-bold text-[120%]">About</p></NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -107,7 +107,7 @@ export function NavMenu() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem  >
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <p className="font-bold text-[120%]">Development</p>

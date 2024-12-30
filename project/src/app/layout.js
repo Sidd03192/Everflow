@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "../styles/globals.css";
 import Nav from "@/components/Nav";
+import "./globals.css"
 
 import { Nunito } from "next/font/google";
 export const metadata = {
