@@ -1,6 +1,7 @@
 import React from 'react'
 import "./startbutton.css"
 import { Button } from './button'
+import Link from 'next/link';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -29,8 +30,8 @@ export const StartButton = () => {
               </div>
   </DropdownMenuTrigger >
   <DropdownMenuContent  className="w-56 text-lg">
-    <DropdownMenuItem className="focus:bg-green-100">New User</DropdownMenuItem>
-    <DropdownMenuItem className="focus:bg-green-100" >Everflow User</DropdownMenuItem>
+   <Link href ="/signup"> <DropdownMenuItem className="focus:bg-green-100"> New User</DropdownMenuItem> </Link> 
+   <Link href ="/login"> <DropdownMenuItem className="focus:bg-green-100" >Everflow User</DropdownMenuItem> </Link> 
   </DropdownMenuContent>
 </DropdownMenu>
 

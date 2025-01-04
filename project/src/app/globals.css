@@ -80,11 +80,16 @@ body {
   }
 }
 
-
 .green_blue_gradient {
   @apply bg-gradient-to-r from-cyan-500 to-green-600 h-full w-full bg-clip-text text-transparent;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 @layer base {
   * {
     @apply border-border;

@@ -2,6 +2,7 @@
 import { Card } from "@/components/ui/card";
 import { StartButton } from "@/components/ui/StartButton";
 import { useState, useEffect } from "react";
+import Nav from "@/components/Nav";
 import { Button } from "@/components/ui/button";
 export default function Home() {
   const [effect1, setEffect1] = useState(false);
@@ -23,48 +24,53 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-full h-full flex">
-      {/* Left side */}
-      <div className="w-1/2 flex items-center justify-center p-8">
-        <div className="items-start max-w-[80%] ">
-          <h1 className="text-8xl font-extrabold mb-4 text-left text-slate-800 ">
-            <span
-              className={`transform transition-all duration-300 ease-in-out ${
-                effect1 ? "green_blue_gradient" : ""
-              }`}
-            >
-              Experience
-            </span>
-            <br />
-            the{" "}
-            <span
-              className={`transform transition-all duration-300 ease-in-out ${
-                effect2 ? "text-red-500" : ""
-              }`}
-            >
-              Power
-            </span>{" "}
-            of
-            <span
-              className={`rounded-3xl ml-5 px-2 py-1 leading-tight cursor-pointer transform transition-all duration-300 ease-in-out ${
-                effect3 ? "bg-yellow-200 scale-105" : ""
-              }`}
-            >
-              Journaling.
-            </span>
-          </h1>
-          <p className="text-xl mb-6 text-left">
-            Start your journaling journey with Everflow. <br />
-            Capture your thoughts, ideas, and memories effortlessly.
-          </p>
-          <StartButton/>
-        </div>
-      </div>
+    <div>
 
-      {/* Right side */}
-      <div className="w-1/2 p-8">
-        <Card className="h-[85vh]" />
-      </div>
+        <Nav></Nav>
+      <div className="w-full h-full flex">
+          {/* Left side */}
+          <div className="w-1/2 flex items-center justify-center p-8">
+            <div className="items-start max-w-[80%] ">
+              <h1 className="text-8xl font-extrabold mb-4 text-left text-slate-800 ">
+                <span
+                  className={`transform transition-all duration-300 ease-in-out ${
+                    effect1 ? "green_blue_gradient" : ""
+                  }`}
+                >
+                  Experience
+                </span>
+                <br />
+                the{" "}
+                <span
+                  className={`transform transition-all duration-300 ease-in-out ${
+                    effect2 ? "text-red-500" : ""
+                  }`}
+                >
+                  Power
+                </span>{" "}
+                of
+                <span
+                  className={`rounded-3xl ml-5 px-2 py-1 leading-tight cursor-pointer transform transition-all duration-300 ease-in-out ${
+                    effect3 ? "bg-yellow-200 scale-105" : ""
+                  }`}
+                >
+                  Journaling.
+                </span>
+              </h1>
+              <p className="text-xl mb-6 text-left">
+                Start your journaling journey with Everflow. <br />
+                Capture your thoughts, ideas, and memories effortlessly.
+              </p>
+              <StartButton/>
+            </div>
+          </div>
+
+          {/* Right side */}
+          <div className="w-1/2 p-8">
+            <Card className="h-[85vh]" />
+          </div>
+        </div>
     </div>
+    
   );
 }
