@@ -19,47 +19,6 @@ Everflow is a modern journaling app designed to help you start journaling effort
 
 ---
 
-## 🚀 Getting Started  
-
-Follow these steps to get Everflow running locally:  
-
-### Prerequisites  
-1. Node.js (>= 16.x)  
-2. Firebase Project (set up Firestore and Authentication)  
-3. [Tiptap](https://tiptap.dev) extensions (installed as dependencies)  
-
-### Installation  
-
-1. **Clone the Repository**  
-   ```bash  
-   git clone https://github.com/yourusername/everflow.git  
-   cd everflow  
-   ```  
-
-2. **Install Dependencies**  
-   ```bash  
-   npm install  
-   ```  
-
-3. **Configure Firebase**  
-   - Add your Firebase project configuration in `.env.local`:  
-     ```bash  
-     NEXT_PUBLIC_FIREBASE_API_KEY=<your-api-key>  
-     NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=<your-auth-domain>  
-     NEXT_PUBLIC_FIREBASE_PROJECT_ID=<your-project-id>  
-     NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=<your-storage-bucket>  
-     NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=<your-messaging-sender-id>  
-     NEXT_PUBLIC_FIREBASE_APP_ID=<your-app-id>  
-     ```  
-
-4. **Start the Development Server**  
-   ```bash  
-   npm run dev  
-   ```  
-   Open [http://localhost:3000](http://localhost:3000) to view the app.  
-
----
-
 ## 🛠️ Tech Stack  
 
 - **Frontend**: [Next.js](https://nextjs.org), [Tiptap](https://tiptap.dev), [Tailwind CSS](https://tailwindcss.com)  
@@ -89,16 +48,15 @@ everflow/
 ---
 
 
-## 📜 License  
+## License  
 
 Everflow is licensed under the [MIT License](LICENSE).  
 
 ---
 
-## 🤝 Acknowledgments  
+## Acknowledgments  
 
-Special thanks to the open-source tools and frameworks that power Everflow, including [Tiptap](https://tiptap.dev), [Tailwind CSS](https://tailwindcss.com), and [Firebase](https://firebase.google.com).  
-
+[Tiptap](https://tiptap.dev), [Tailwind CSS](https://tailwindcss.com), and [Firebase](https://firebase.google.com).  
+(TIP TAP IS AWESOME!)
 ---
 
-Let me know if you’d like to tailor it further!
